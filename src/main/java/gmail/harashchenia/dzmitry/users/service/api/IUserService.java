@@ -2,6 +2,7 @@ package gmail.harashchenia.dzmitry.users.service.api;
 
 import gmail.harashchenia.dzmitry.users.dto.ListOfUsers;
 import gmail.harashchenia.dzmitry.users.dto.UserCreateDto;
+import gmail.harashchenia.dzmitry.users.dto.UserDto;
 import gmail.harashchenia.dzmitry.users.dto.UserReadDto;
 import org.springframework.data.domain.Pageable;
 

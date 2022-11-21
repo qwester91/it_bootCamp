@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 @Repository
 public interface IUserDao extends JpaRepository<UserEntity, UUID> {
-    Page<UserEntity> findAll(Pageable pageable);
+    Page<UserEntity> findByOrderByEmailAsc(Pageable pageable);
     UserEntity findUserEntitiesByRole(String role);
 }

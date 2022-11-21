@@ -1,4 +1,4 @@
 package gmail.harashchenia.dzmitry.users.dto;
 
-public class UserCreateDto {
+public class UserCreateDto extends UserDto{
 }
