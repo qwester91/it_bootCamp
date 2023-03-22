@@ -33,6 +33,7 @@ public class UserService implements IUserService {
 
     @Override
     public ListOfUsers<UserReadDto> getListOfUsers(Pageable pageable) {
-        return null;
+        ListOfUsers<UserReadDto> readDtoFromEntity = mapper.getReadDtoFromEntity(new ListOfUsers<>(dao.findByOrderByEmailAsc(pageable)));
+        return readDtoFromEntity;
     }
 }
